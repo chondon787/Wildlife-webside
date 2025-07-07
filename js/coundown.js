@@ -11,7 +11,7 @@ function coundown(){
     }
     coundownText.innerHTML= `
         <div class="text-center">
-        <img class="lg:w-52 w-36 mx-auto rounded-sm" src="../image/my.jpg"/>
+        <img class="lg:w-52 w-36 mx-auto rounded-sm" src="./image/my.jpg"/>
             <h1 class="text-2xl mt-2 font-bold">Congrates</h1>
         <h3 class=" font-bold">Adoption Process in Start Fory your Pet</h3>
         <h1 class="font-bold text-2xl">${counter}</h1>
@@ -21,7 +21,7 @@ function coundown(){
         counter--;
         coundownText.innerHTML= `
         <div class="text-center">
-        <img class="lg:w-52 w-36 mx-auto rounded-sm" src="../image/my.jpg"/>
+        <img class="lg:w-52 w-36 mx-auto rounded-sm" src="./image/my.jpg"/>
             <h1 class="text-2xl mt-2 font-bold">Congrates</h1>
         <h3 class=" font-bold">Adoption Process in Start Fory your Pet</h3>
         <h1 class="font-bold text-2xl">${counter}</h1>
