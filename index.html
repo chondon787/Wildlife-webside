@@ -1,55 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WildLife Website</title>
-    <!-- dasiyui and play cdn -->
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- font awsome cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WildLife Website</title>
+  <!-- dasiyui and play cdn -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    .active{
+    .active {
       background-color: aqua;
       color: black;
     }
   </style>
-  </head>
-  <body class="12/12 mx-auto">
-   <header >
-      <nav class="fixed top-0 left-0 w-full z-50">
-      <div class="navbar bg-base-100 shadow-sm">
+</head>
+
+<body class="12/12 mx-auto">
+  <header>
+    <nav class="fixed top-0 left-0 w-full z-50">
+      <div id="shadowHeader" class="navbar bg-blue-300 shadow-sm">
         <div class="navbar-start flex justify-between lg:justify-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-            >
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
               <li onclick="homeSection()"><a>Home</a></li>
-              <li><a>Blog</a></li>
-              <li><a>About Us</a></li>
+              <li onclick="animale()"><a>Animale</a></li>
+              <li onclick="aboutButton()"><a>About Us</a></li>
               <li onclick="contact()"><a>Contact</a></li>
             </ul>
           </div>
@@ -58,136 +45,280 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li onclick="homeSection()"><a>Home</a></li>
-            <li><a>Shop</a></li>
-            <li><a>About Us</a></li>
+            <li onclick="animale()"><a>Animale</a></li>
+            <li onclick="aboutButton()"><a>About Us</a></li>
             <li onclick="contact()"><a>Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end">
           <img class="lg:w-10 w-6 " src="https://img.icons8.com/?size=48&id=H101gtpJBVoh&format=png" alt="" />
         </div>
-        
+
       </div>
-      </nav>
-    
-    </header>
+    </nav>
+
+  </header>
+
+
+
+  <main id="main-container">
     <div id="home-section" class="lg:w-11/12 mx-auto lg:mt-24 mt-16 lg:px-0 px-2">
-       <div  class="text-center">
-          <p class="">Bringing Families Together ❤️‍🔥 </p>
-          <h1 class="lg:mt-5 mt-2 font-bold lg:text-4xl text-2xl">Your Path to Adoption <br>Starts Here</h1>
-          <p class="lg:mt-5 mt-2 ">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
-          <button id="" onclick="scrollAdoptSection()" class="btn lg:mt-5 mt-2 text-blue-500">View More</button>
-          <div class="flex justify-center">
-            <img class=" lg:w-[400px] w-[200px] mx-auto" src="./image/pet.webp" alt="">
-          </div>
-       </div>
-   
+      <div class="text-center">
+        <p class="">Bringing Families Together ❤️‍🔥 </p>
+        <h1 class="lg:mt-5 mt-2 font-bold lg:text-4xl text-2xl">Your Path to Adoption <br>Starts Here</h1>
+        <p class="lg:mt-5 mt-2 ">It is a long established fact that a reader will be distracted by the readable content
+          of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
+        <button id="" onclick="scrollAdoptSection()" class="btn lg:mt-5 mt-2 text-blue-500">View More</button>
+        <div class="flex justify-center">
+          <img class=" lg:w-[400px] w-[200px] mx-auto" src="./image/pet.webp" alt="">
+        </div>
+      </div>
+      <div id="animale-scroll" class="text-center lg:my-5 my-3 ">
+        <h1 id="view-scroll-section" class="lg:text-3xl text-2xl font-bold mb-2">Adopt Your Best Friend</h1>
+        <p class="lg:w-[636px] w-9/12 mx-auto">It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+      </div>
+      <!-- four categories button -->
+      <section>
+        <div id="button-container" class="flex items-center justify-between lg:my-8"></div>
+        <div class="divider"></div>
+        <div class="flex justify-between my-4">
+          <p class="font-bold ">Best Dial For You</p>
+          <button class="btn">Short By Pric</button>
+        </div>
 
-      
-      <main>
-<div class="text-center lg:my-5 my-3 ">
-          <h1 id="view-scroll-section" class="lg:text-3xl text-2xl font-bold mb-2">Adopt  Your  Best Friend</h1>
-        <p class="lg:w-[636px] w-9/12 mx-auto">It is a long established fact that a reader will be distracted by the readable content of a  page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
-</div>
-<!-- four categories button -->
- <section>
-  <div id="button-container" class="flex items-center justify-between lg:my-8"></div>
-<div class="divider"></div>
-  <div class="flex justify-between my-4">
-<p class="font-bold ">Best Dial For You</p>
-<button class="btn">Short By Pric</button>
-  </div>
+        <!-- loading spinner -->
+        <div class="text-center mb-5"> <span id="loadingSpinner"
+            class="hidden loading loading-spinner text-neutral"></span>
+        </div>
+      </section>
+      <!-- all cards categories -->
+      <section class=" lg:flex lg:flex-row flex-col gap-5 ">
+        <div id="card-conteiner"
+          class="lg:w-9/12 w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 bg-gray-50  text-center"> </div>
+        <div id="like-container"
+          class="lg:w-3/12  h-full w-full overflow-y-auto max-h-[800px] border-gray-300 grid lg:grid-cols-2 grid-cols-2 px-3 pt-3 border">
+        </div>
+      </section>
+      <!-- details container -->
+      <!-- Open the modal using ID.showModal() method -->
 
-  <!-- loading spinner -->
-  <div class="text-center mb-5"> <span id="loadingSpinner" class="hidden loading loading-spinner text-neutral"></span>
-</div>
- </section>
- <!-- all cards categories -->
-  <section class=" lg:flex lg:flex-row flex-col gap-5 ">
-    <div id="card-conteiner" class="lg:w-9/12 w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 bg-gray-50  text-center"> </div>
-    <div  id="like-container" class="lg:w-3/12  h-full w-full overflow-y-auto max-h-[800px] border-gray-300 grid lg:grid-cols-2 grid-cols-2 px-3 pt-3 border">  </div>
-  </section>
-  <!-- details container -->
-   <!-- Open the modal using ID.showModal() method -->
- 
-<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-     <div id="modal-container"></div>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-      </main>
-    </div>
-
-     <!-- You can open the modal using ID.showModal() method -->
-<!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
- 
-  <div class="" id="adptClose">
-    <dialog id="my_modal_3" class="modal">
-  <div id="modal-box" class="modal-box">
-    <form method="dialog">
-     
-    </form>
-    <div  id="coundown-number" class="p-1"></div>
-  </div>
-</dialog>
-  </div>
- 
-    <!-- footer -->
-      <footer id="footer-scroll-section" class="bg-slate-900 lg:mt-10 mt-5">
-
-        <div class=" grid lg:grid-cols-3 grid-cols-1 gap-10 lg:p-8 p-3 lg:mx-0 mx-6 text-white justify-evenly ">
-          <!-- section 1 -->
-          <section class=" space-y-2">
-            <div class="flex gap-4 mb-4 lg:mb-6">
-              <img src="./image/logo.webp" alt="">
-              <h1 class="font-bold text-2xl">Peddy</h1>
-            </div>
-            <p>Location: av. Washington 165, NY CA 54003</p>
-            <p>Phone: +31 85 964 47 25</p>
-            <p>Email: chondonroy787@gmail.com</p>
-            <p>Openings hours: 9.00 AM - 5.00 PM</p>
-           
-          </section>
-          <!-- section2 -->
-          <section>
-            <div class="  space-y-2 lg:mb-6 mb-4">
-              <h1 class="font-bold text-2xl">Usefull links</h1>
-              <ul class="flex flex-col ">
-              <a class="hover:text-gray-300" href="Home">Home</a>
-              <a class="hover:text-gray-300" href="About us">About us</a>
-              <a class="hover:text-gray-300" href="Animale">Animale</a>
-              <a class="hover:text-gray-300" href="Foundetion">Foundetion</a>
-              <a class="hover:text-gray-300" href="Contact ">Contact</a>
-              </ul>
-            </div>
-          </section>
-          <!-- section 3 -->
-          <div class=" space-y-2">
-            <h1 class="font-bold text-2xl mb-4 lg:mb-6">Drop A Message</h1>
-            <input class="rounded-sm p-2 w-full" type="email" name="" id="" placeholder="inter your email">
-            <button class="btn w-full">Subscribe</button>
-             <div class="flex gap-5 mt-4 lg:mt-6 items-center">
-              <img class="w-5" src="https://ouch-prod-var-cdn.icons8.com/pm/illustrations/thumbs/tI9R6bfkrG4KokkS.webp" alt="">
-              <img class="w-5" src="https://ouch-prod-var-cdn.icons8.com/wy/illustrations/thumbs/QqCpo1TGh-BxScSL.webp" alt="">
-              <img class="w-5" src="https://ouch-prod-var-cdn.icons8.com/iz/illustrations/thumbs/kyGKQRlJ-P0UEgzo.webp" alt="">
-            </div>
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="modal-container"></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
           </div>
         </div>
-      </footer>
-      
+      </dialog>
+  </main>
+  <!-- contact with me section -->
+   
+  <!-- about section -->
+  <section id="hidden-about" class="mt-16 hidden">
+    <nav>
+      <div class="bg-blue-300 p-8 text-center">
+        <h1 class="font-bold text-2xl">About Us</h1>
+      </div>
+      <div class="">
+        <div class="text-center">
+          <h1 class="my-5 font-bold text-2xl">Our Dellership Member</h1>
+        </div>
+        <div id="about-main-container" class="grid lg:grid-cols-4 grid-cols-2 gap-4 rounded-sm lg:w-8/12 mx-auto">
+
+          <!-- about card 1 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto object-cover"><img class="h-full w-full object-cover rounded-sm" src="./image/Gemini man1.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">USA</span></p>
+            </div>
+          </div>
+          <!-- about card 2 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto object-cover"><img class="h-full w-full object-cover rounded-sm" src="./image/man 2.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">USA</span></p>
+            </div>
+          </div>
+          <!-- about card 3 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto "><img class="w-full h-full object-cover rounded-sm" src="./image/man-3.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">USA</span></p>
+            </div>
+          </div>
+          <!-- about card 4 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm" src="./image/man-4.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">Rashiya</span></p>
+            </div>
+          </div>
+</div>
+         <div id="viewMoreMember" class="hidden grid lg:grid-cols-4 grid-cols-2 gap-4 rounded-sm lg:w-8/12 mx-auto mt-4">
+          <!-- about card 5 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm" src="./image/man-5.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">Japan</span></p>
+            </div>
+          </div>
+          <!-- about card 6 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-6.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">ISRAILE</span></p>
+            </div>
+          </div>
+          <!-- about card 7 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-7.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">Is:tel-abib</span></p>
+            </div>
+          </div>
+          <!-- about card 8 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-200 shadow-sm p-2">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-8.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">London</span></p>
+            </div>
+          </div>
+          <!-- about card 9 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-9.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">Astraliya</span></p>
+            </div>
+          </div>
+          <!-- about card 10 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-10.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">Dinajpur</span></p>
+            </div>
+          </div>
+          <!-- about card 11 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-11.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">Dinajpur</span></p>
+            </div>
+          </div>
+          <!-- about card 12 -->
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-12.png" alt="">
+              <p class="mt-4 font-bold">Name: Krishna Roy</p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Service Area: <span class="text-blue-500">India</span></p>
+            </div>
+          </div>
+          </div>
+          
+        
+      </div>
+       <div class="text-end lg:w-9/12 mx-auto mt-4">
+       <div id="viewMoreId">
+         <button  onclick="viewMoreMemberButton()" class="btn btn-info text-white ">View More</button>
+       </div>
+        <div  id="noMoreId" class="hidden ">
+          <button onclick="NoMoreMemberButton()" class="btn btn-info text-white">No More</button>
+        </div>
+
+        <!-- question section -->
+         <div class="bg-gray-200 flex gap-4 ">
+
+         </div>
+      </div>
+    </nav>
+
+  </section>
+  
+  
+  
+  
+  
+  <!-- You can open the modal using ID.showModal() method -->
+  <div class="" id="adptClose">
+    <dialog id="my_modal_3" class="modal">
+      <div id="modal-box" class="modal-box">
+        <form method="dialog">
+
+        </form>
+        <div id="coundown-number" class="p-1"></div>
+      </div>
+    </dialog>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer-scroll-section" class="bg-slate-900 lg:mt-10 mt-5">
+
+    <div class=" grid lg:grid-cols-3 grid-cols-1 gap-10 lg:p-8 p-3 lg:mx-0 mx-6 text-white justify-evenly ">
+      <!-- section 1 -->
+      <section class=" space-y-2">
+        <div class="flex gap-4 mb-4 lg:mb-6">
+          <img src="./image/logo.webp" alt="">
+          <h1 class="font-bold text-2xl">Peddy</h1>
+        </div>
+        <p>Location: av. Washington 165, NY CA 54003</p>
+        <p>Phone: +31 85 964 47 25</p>
+        <p>Email: chondonroy787@gmail.com</p>
+        <p>Openings hours: 9.00 AM - 5.00 PM</p>
+
+      </section>
+      <!-- section2 -->
+      <section>
+        <div class="  space-y-2 lg:mb-6 mb-4">
+          <h1 class="font-bold text-2xl">Usefull links</h1>
+          <ul class="flex flex-col ">
+            <a class="hover:text-gray-300" href="Home">Home</a>
+            <a class="hover:text-gray-300" href="About us">About us</a>
+            <a class="hover:text-gray-300" href="Animale">Animale</a>
+            <a class="hover:text-gray-300" href="Foundetion">Foundetion</a>
+            <a class="hover:text-gray-300" href="Contact ">Contact</a>
+          </ul>
+        </div>
+      </section>
+      <!-- section 3 -->
+      <div class=" space-y-2">
+        <h1 class="font-bold text-2xl mb-4 lg:mb-6">Drop A Message</h1>
+        <input class="rounded-sm p-2 w-full" type="email" name="" id="" placeholder="inter your email">
+        <button class="btn w-full">Subscribe</button>
+        <div class="flex gap-5 mt-4 lg:mt-6 items-center">
+          <img class="w-5" src="https://ouch-prod-var-cdn.icons8.com/pm/illustrations/thumbs/tI9R6bfkrG4KokkS.webp"
+            alt="">
+          <img class="w-5" src="https://ouch-prod-var-cdn.icons8.com/wy/illustrations/thumbs/QqCpo1TGh-BxScSL.webp"
+            alt="">
+          <img class="w-5" src="https://ouch-prod-var-cdn.icons8.com/iz/illustrations/thumbs/kyGKQRlJ-P0UEgzo.webp"
+            alt="">
+        </div>
+      </div>
     </div>
-    <script src="./js/scroll.js"></script>
-    <script src="./js/categories.js"></script>
-    <script src="./js/active.js"></script>
-    <script src="./js/loadCard.js"></script>
-    <script src="./js/likeButton.js"></script>
-    <script src="./js/details.js"></script>
-    <script src="./js/coundown.js"></script>
-  </body>
+  </footer>
+
+  </div>
+  <script src="./js/scroll.js"></script>
+  <script src="./js/categories.js"></script>
+  <script src="./js/active.js"></script>
+  <script src="./js/loadCard.js"></script>
+  <script src="./js/likeButton.js"></script>
+  <script src="./js/details.js"></script>
+  <script src="./js/coundown.js"></script>
+  <!-- <script src="./js/displayAbout.js"></script> -->
+</body>
+
 </html>
