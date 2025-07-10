@@ -1,0 +1,16 @@
+  .active {
+      background-color: aqua;
+      color: black;
+    }
+
+     .shadow-button{
+        box-shadow: 5px 5px 10px rgba(29, 15, 235, 0.5);
+     }
+
+     .container-shadow{
+        box-shadow: 2px 4px 8px rgba(171, 174, 174, 0.897);
+     }
+
+     .shadow-tag{
+        box-shadow: 2px 4px rgba(140, 155, 155, 0.897);
+     }

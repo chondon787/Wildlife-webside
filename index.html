@@ -13,12 +13,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .active {
-      background-color: aqua;
-      color: black;
-    }
-  </style>
+  <link rel="stylesheet" href="./js/style.css">
+
 </head>
 
 <body class="12/12 mx-auto">
@@ -62,7 +58,7 @@
 
 
   <main id="main-container">
-    <div id="home-section" class="lg:w-11/12 mx-auto lg:mt-24 mt-16 lg:px-0 px-2">
+    <div id="home-section" class="lg:w-11/12 mx-auto lg:mt-24 mt-16 lg:px-0 px-2 scroll-mt-24">
       <div class="text-center">
         <p class="">Bringing Families Together ❤️‍🔥 </p>
         <h1 class="lg:mt-5 mt-2 font-bold lg:text-4xl text-2xl">Your Path to Adoption <br>Starts Here</h1>
@@ -73,8 +69,8 @@
           <img class=" lg:w-[400px] w-[200px] mx-auto" src="./image/pet.webp" alt="">
         </div>
       </div>
-      <div id="animale-scroll" class="text-center lg:my-5 my-3 ">
-        <h1 id="view-scroll-section" class="lg:text-3xl text-2xl font-bold mb-2">Adopt Your Best Friend</h1>
+      <div id="animale-scroll" class="text-center lg:my-5 my-3 scroll-mt-24 ">
+        <h1 id="view-scroll-section" class="lg:text-3xl text-2xl font-bold mb-2  ">Adopt Your Best Friend</h1>
         <p class="lg:w-[636px] w-9/12 mx-auto">It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
       </div>
@@ -114,9 +110,98 @@
           </div>
         </div>
       </dialog>
+    </div>
+    <!-- contact with me section -->
+    <section id="contact-container" class="lg:w-11/12 p-2 mx-auto lg:my-10 scroll-mt-24">
+      <div class="flex justify-center items-center mt-5">
+        <h1 class="font-bold text-2xl">Contact With <span class="text-red-500 ">Our</span></h1>
+      </div>
+
+
+      <div class="flex lg:flex-row flex-col gap-6 lg:my-10 my-5">
+        <!-- contact div1 start-->
+        <div class="lg:w-4/12  mx-auto bg-blue-100 container-shadow">
+          <div class="p-5">
+            <div class=" overflow-hidden rounded-lg"><img
+                class="object-cover  hover:scale-150 transition-transform duration-1000 hover:transform-rounded-lg"
+                src="./image/handship.avif" alt=""></div>
+            <div class="text-gray-500">
+              <h1 class="font-bold text-2xl lg:mt-6 mt-3"><span class="text-red-500">P</span>eddy Collect</h1>
+              <p class="">I will always be at your service.You are welcome to contact us with any questions.</p>
+
+              <p>Phone Number</p>
+              <p>Email: chondonroy787@gmail.com</p>
+            </div>
+            <div class=" ">
+              <h1 class="text-xl my-5"> Contact With Me</h1>
+              <div class="flex gap-4">
+                <a class=" rounded-full" href="https://www.facebook.com/chandon.roy.509"><img class="w-5 shadow-tag rounded-full transform hover:scale-150 duration-1000"
+                    src="https://ouch-prod-var-cdn.icons8.com/pm/illustrations/thumbs/tI9R6bfkrG4KokkS.webp" alt=""></a>
+                <img class="w-5 rounded-lg shadow-tag transform hover:scale-150 duration-1000"
+                  src="https://ouch-prod-var-cdn.icons8.com/wy/illustrations/thumbs/QqCpo1TGh-BxScSL.webp" alt="">
+               <div class="">
+                 <img class="w-5 rounded-lg shadow-tag transform hover:scale-150 duration-1000 object-cover"
+                  src="https://ouch-prod-var-cdn.icons8.com/iz/illustrations/thumbs/kyGKQRlJ-P0UEgzo.webp" alt="">
+               </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--contact div2 start-->
+        <div class="lg:w-8/12 w-full mx-auto bg-blue-100">
+          <div class=" p-5 text-gray-600 container-shadow">
+            <div class="grid grid-cols-2  items-center gap-4 w-full">
+              <div>
+                <h1 class="mb-2 font-bold">Your Name</h1>
+                <input
+                  class="w-full p-3 rounded-lg bg-white border-blue-100 border-2 focus:border-gray-300 focus:outline-none"
+                  type="name" name="" id="" placeholder="Name">
+              </div>
+              <div>
+                <h1 class="mb-2 font-bold">Your Number</h1>
+
+                <input
+                  class="w-full p-3 rounded-lg bg-white border-blue-100 border-2 focus:border-gray-300 focus:outline-none"
+                  type="number" name="" id="" placeholder="Nubmber">
+              </div>
+
+            </div>
+            <div class="my-2">
+              <h1 class="font-bold my-2">Email</h1>
+              <input
+                class="bg-white w-full p-3 border-blue-100 border-2 focus:border-gray-300 focus:outline-none  rounded-lg "
+                type="email" name="" id="" placeholder="Email">
+            </div>
+            <div class="my-2">
+              <h1 class="font-bold my-2">Subject</h1>
+              <input
+                class="bg-white w-full p-3 border-blue-100 border-2 focus:border-gray-300 focus:outline-none rounded-lg"
+                type="text" name="" id="" placeholder="Subject">
+            </div>
+            <div class="my-2">
+              <h1 class="font-bold my-2">Your Message</h1>
+
+              <textarea
+                class="bg-white h-full w-full  p-3 border-blue-100 border-2 focus:border-gray-300 focus:outline-none rounded-lg"
+                name="" id="" cols="20" rows="5" placeholder="text"></textarea>
+
+            </div>
+            <div class="lg:mt-10 mt-5 ">
+              <button class=" relative  bg-gradient-to-r from-blue-200 to-blue-400 rounded-lg py-4 font-bold text-xl w-full hover:from-blue-400 hover:to-blue-600 transition-all hover:duration-600 hover:text-white text-gray-800 hover:-translate-y-3 
+                shadow-button">Send
+                Message</button>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <!-- contact div 2 end -->
+      </div>
+    </section>
   </main>
-  <!-- contact with me section -->
-   
+
   <!-- about section -->
   <section id="hidden-about" class="mt-16 hidden">
     <nav>
@@ -131,127 +216,151 @@
 
           <!-- about card 1 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class="h-full w-full object-cover rounded-sm" src="./image/Gemini man1.png" alt="">
+            <div class="h-[150px] mx-auto object-cover"><img class="h-full w-full object-cover rounded-sm"
+                src="./image/Gemini man1.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">USA</span></p>
             </div>
           </div>
           <!-- about card 2 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class="h-full w-full object-cover rounded-sm" src="./image/man 2.png" alt="">
+            <div class="h-[150px] mx-auto object-cover"><img class="h-full w-full object-cover rounded-sm"
+                src="./image/man 2.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">USA</span></p>
             </div>
           </div>
           <!-- about card 3 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto "><img class="w-full h-full object-cover rounded-sm" src="./image/man-3.png" alt="">
+            <div class="h-[150px] mx-auto "><img class="w-full h-full object-cover rounded-sm" src="./image/man-3.png"
+                alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">USA</span></p>
             </div>
           </div>
           <!-- about card 4 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm" src="./image/man-4.png" alt="">
+            <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm" src="./image/man-4.png"
+                alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">Rashiya</span></p>
             </div>
           </div>
-</div>
-         <div id="viewMoreMember" class="hidden grid lg:grid-cols-4 grid-cols-2 gap-4 rounded-sm lg:w-8/12 mx-auto mt-4">
+        </div>
+        <div id="viewMoreMember" class="hidden grid lg:grid-cols-4 grid-cols-2 gap-4 rounded-sm lg:w-8/12 mx-auto mt-4">
           <!-- about card 5 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm" src="./image/man-5.png" alt="">
+            <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm" src="./image/man-5.png"
+                alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">Japan</span></p>
             </div>
           </div>
           <!-- about card 6 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-6.png" alt="">
+            <div class="h-[150px] mx-auto"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-6.png"
+                alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">ISRAILE</span></p>
             </div>
           </div>
           <!-- about card 7 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-7.png" alt="">
+            <div class="h-[150px] mx-auto"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-7.png"
+                alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">Is:tel-abib</span></p>
             </div>
           </div>
           <!-- about card 8 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-200 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-8.png" alt="">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
+                src="./image/man-8.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">London</span></p>
             </div>
           </div>
           <!-- about card 9 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-9.png" alt="">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
+                src="./image/man-9.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">Astraliya</span></p>
             </div>
           </div>
           <!-- about card 10 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-10.png" alt="">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
+                src="./image/man-10.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">Dinajpur</span></p>
             </div>
           </div>
           <!-- about card 11 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-11.png" alt="">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
+                src="./image/man-11.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">Dinajpur</span></p>
             </div>
           </div>
           <!-- about card 12 -->
           <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-12.png" alt="">
+            <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
+                src="./image/man-12.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
-              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span class="text-red-500">7pm</span></p>
+              <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
+                  class="text-red-500">7pm</span></p>
               <p class="font-bold">Service Area: <span class="text-blue-500">India</span></p>
             </div>
           </div>
-          </div>
-          
-        
+        </div>
+
+
       </div>
-       <div class="text-end lg:w-9/12 mx-auto mt-4">
-       <div id="viewMoreId">
-         <button  onclick="viewMoreMemberButton()" class="btn btn-info text-white ">View More</button>
-       </div>
-        <div  id="noMoreId" class="hidden ">
+      <div class="text-end lg:w-9/12 mx-auto mt-4">
+        <div id="viewMoreId">
+          <button onclick="viewMoreMemberButton()" class="btn btn-info text-white ">View More</button>
+        </div>
+        <div id="noMoreId" class="hidden ">
           <button onclick="NoMoreMemberButton()" class="btn btn-info text-white">No More</button>
         </div>
 
         <!-- question section -->
-         <div class="bg-gray-200 flex gap-4 ">
+        <div class="bg-gray-200 flex gap-4 ">
 
-         </div>
+        </div>
       </div>
     </nav>
 
   </section>
-  
-  
-  
-  
-  
+
+
+
+
+
   <!-- You can open the modal using ID.showModal() method -->
   <div class="" id="adptClose">
     <dialog id="my_modal_3" class="modal">
@@ -318,6 +427,7 @@
   <script src="./js/likeButton.js"></script>
   <script src="./js/details.js"></script>
   <script src="./js/coundown.js"></script>
+
   <!-- <script src="./js/displayAbout.js"></script> -->
 </body>
 

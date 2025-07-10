@@ -17,8 +17,9 @@
    
    function contact(){
      document.getElementById('shadowHeader').classList.add('shadow-sm')
-      const footerSection= document.getElementById('footer-scroll-section');
-      footerSection.scrollIntoView({behavior: "smooth"})
+      const contactSection= document.getElementById('contact-container');
+   
+      contactSection.scrollIntoView({behavior: "smooth"})
       mainContainerRemoveHiden()
    hiddenAbout()
  }
@@ -54,6 +55,8 @@ function NoMoreMemberButton(){
 document.getElementById('viewMoreMember').classList.add('hidden')}
 
  // extra container
+ 
+
  function hiddenAbout(){
    document.getElementById('hidden-about').classList.add('hidden')
  }
