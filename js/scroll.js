@@ -82,4 +82,11 @@ document.getElementById('viewMoreMember').classList.add('hidden')}
   navItems.forEach(item => item.classList.remove('active'));
 }
 
+
+const cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+  card.addEventListener('touchstart', () => card.classList.add('scale-125'));
+  card.addEventListener('touchend', ()   => card.classList.remove('scale-125'));
+});
+
  
