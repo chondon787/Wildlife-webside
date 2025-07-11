@@ -40,4 +40,3 @@ function coundown(){
 
      
 
- console.log('okey')

@@ -23,14 +23,14 @@
       <div id="shadowHeader" class="navbar bg-blue-300 shadow-sm">
         <div class="navbar-start flex justify-between lg:justify-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class=" lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              <li onclick="homeSection()"><a>Home</a></li>
+              <li onclick="homeSection()"><a class="hover:text-blue " href="">Home</a></li>
               <li onclick="animale()"><a>Animale</a></li>
               <li onclick="aboutButton()"><a>About Us</a></li>
               <li onclick="contact()"><a>Contact</a></li>
@@ -39,11 +39,11 @@
           <p class="btn btn-ghost lg:text-xl font-bold text-sm">Peddy</p>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li onclick="homeSection()"><a>Home</a></li>
-            <li onclick="animale()"><a>Animale</a></li>
-            <li onclick="aboutButton()"><a>About Us</a></li>
-            <li onclick="contact()"><a>Contact</a></li>
+          <ul class="menu menu-horizontal px-1 ">
+            <li onclick="homeSection()"><a id="homeSectionId" class="remove-active hover:text-white hover:duration-1000" href="#">Home</a></li>
+            <li onclick="animale()"><a id="animaleSectionId" class="remove-active hover:text-white hover:duration-1000" href="#" >Animale</a></li>
+            <li onclick="aboutButton()"><a id="aboutButtonId" class="remove-active hover:text-white hover:duration-1000" href="#" >About Us</a></li>
+            <li onclick="contact()"><a id="contactId" class="remove-active hover:text-white hover:duration-1000" href="#" >Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -76,7 +76,7 @@
       </div>
       <!-- four categories button -->
       <section>
-        <div id="button-container" class="flex items-center justify-between lg:my-8"></div>
+        <div id="button-container" class="flex items-center lg:justify-between justify-evenly lg:my-8"></div>
         <div class="divider"></div>
         <div class="flex justify-between my-4">
           <p class="font-bold ">Best Dial For You</p>
@@ -111,6 +111,7 @@
         </div>
       </dialog>
     </div>
+    <div class="divider"></div>
     <!-- contact with me section -->
     <section id="contact-container" class="lg:w-11/12 p-2 mx-auto lg:my-10 scroll-mt-24">
       <div class="flex justify-center items-center mt-5">
@@ -208,15 +209,15 @@
       <div class="bg-blue-300 p-8 text-center">
         <h1 class="font-bold text-2xl">About Us</h1>
       </div>
-      <div class="">
-        <div class="text-center">
+      <div class="bg-gray-50 pt-10">
+        <div class="text-center ">
           <h1 class="my-5 font-bold text-2xl">Our Dellership Member</h1>
         </div>
-        <div id="about-main-container" class="grid lg:grid-cols-4 grid-cols-2 gap-4 rounded-sm lg:w-8/12 mx-auto">
+        <div id="about-main-container" class="grid lg:grid-cols-4 grid-cols-2 gap-4 rounded-sm lg:w-8/12 w-8/9 mx-auto">
 
           <!-- about card 1 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class="h-full w-full object-cover rounded-sm"
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
+            <div class="h-[150px] mx-auto "><img class="h-full w-full object-cover rounded-sm "
                 src="./image/Gemini man1.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
               <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
@@ -225,8 +226,8 @@
             </div>
           </div>
           <!-- about card 2 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
-            <div class="h-[150px] mx-auto object-cover"><img class="h-full w-full object-cover rounded-sm"
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
+            <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm"
                 src="./image/man 2.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
               <p class="font-bold">Time: <span class="text-red-500">9am</span> from <span
@@ -235,7 +236,7 @@
             </div>
           </div>
           <!-- about card 3 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto "><img class="w-full h-full object-cover rounded-sm" src="./image/man-3.png"
                 alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -245,7 +246,7 @@
             </div>
           </div>
           <!-- about card 4 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm" src="./image/man-4.png"
                 alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -255,9 +256,9 @@
             </div>
           </div>
         </div>
-        <div id="viewMoreMember" class="hidden grid lg:grid-cols-4 grid-cols-2 gap-4 rounded-sm lg:w-8/12 mx-auto mt-4">
+        <div id="viewMoreMember" class="hidden grid lg:grid-cols-4 grid-cols-2 gap-4 rounded-sm lg:w-8/12 w-8/9 mx-auto mt-4">
           <!-- about card 5 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto"><img class="h-full w-full object-cover rounded-sm" src="./image/man-5.png"
                 alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -267,7 +268,7 @@
             </div>
           </div>
           <!-- about card 6 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-6.png"
                 alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -277,7 +278,7 @@
             </div>
           </div>
           <!-- about card 7 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto"><img class=" w-full h-full object-cover rounded-sm" src="./image/man-7.png"
                 alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -287,7 +288,7 @@
             </div>
           </div>
           <!-- about card 8 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-200 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-200 shadow-sm p-2transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
                 src="./image/man-8.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -297,7 +298,7 @@
             </div>
           </div>
           <!-- about card 9 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
                 src="./image/man-9.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -307,7 +308,7 @@
             </div>
           </div>
           <!-- about card 10 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
                 src="./image/man-10.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -317,7 +318,7 @@
             </div>
           </div>
           <!-- about card 11 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
                 src="./image/man-11.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -327,7 +328,7 @@
             </div>
           </div>
           <!-- about card 12 -->
-          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2">
+          <div class=" h-[250px]  mx-auto flex flex-col bg-base-300 shadow-sm p-2 transform hover:scale-110 duration-1000">
             <div class="h-[150px] mx-auto object-cover"><img class=" w-full h-full object-cover rounded-sm"
                 src="./image/man-12.png" alt="">
               <p class="mt-4 font-bold">Name: Krishna Roy</p>
@@ -340,12 +341,14 @@
 
 
       </div>
-      <div class="text-end lg:w-9/12 mx-auto mt-4">
+      <!-- view more button -->
+   <div class="bg-gray-50 pb-10 pt-2">
+       <div class="text-end lg:w-8/12 mx-auto p-2">
         <div id="viewMoreId">
-          <button onclick="viewMoreMemberButton()" class="btn btn-info text-white ">View More</button>
+          <button onclick="viewMoreMemberButton()" class="btn active text-white ">View More</button>
         </div>
         <div id="noMoreId" class="hidden ">
-          <button onclick="NoMoreMemberButton()" class="btn btn-info text-white">No More</button>
+          <button onclick="NoMoreMemberButton()" class="btn active text-white">No More</button>
         </div>
 
         <!-- question section -->
@@ -353,6 +356,7 @@
 
         </div>
       </div>
+   </div>
     </nav>
 
   </section>
@@ -374,7 +378,7 @@
   </div>
 
   <!-- footer -->
-  <footer id="footer-scroll-section" class="bg-slate-900 lg:mt-10 mt-5">
+  <footer id="footer-scroll-section" class="bg-slate-900 ">
 
     <div class=" grid lg:grid-cols-3 grid-cols-1 gap-10 lg:p-8 p-3 lg:mx-0 mx-6 text-white justify-evenly ">
       <!-- section 1 -->

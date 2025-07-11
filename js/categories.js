@@ -44,7 +44,7 @@ function displayCategories(category){
         const button = document.createElement('div');
         button.classList= ""
         button.innerHTML=`
-        <button id="btn-${item.category}" onclick="loadButtonCategories('${item.category}')" class="btn lg:gap-4 font-bold lg:text-2xl lg:p-7 p-1 category-btn"><span><img class="lg:w-10 w-5 mx-auto" src="${item.category_icon}" /></span>
+        <button id="btn-${item.category}" onclick="loadButtonCategories('${item.category}')" class="btn lg:gap-6 gap-5 font-bold lg:text-2xl lg:p-7 p-3 category-btn"><span><img class="lg:w-10 w-5 mx-auto" src="${item.category_icon}" /></span>
          ${item.category}</button>
         `
     buttonContainer.appendChild(button)
