@@ -85,8 +85,8 @@ document.getElementById('viewMoreMember').classList.add('hidden')}
 
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
-  card.addEventListener('focus', () => card.classList.add('scale-125'));
-  card.addEventListener('blur', ()   => card.classList.remove('scale-125'));
+  card.addEventListener('touchstart', () => card.classList.add('scale-125'));
+  card.addEventListener('touchend', ()   => card.classList.remove('scale-125'));
 });
 
  
