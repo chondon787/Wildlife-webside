@@ -19,10 +19,8 @@
         box-shadow: 2px 4px rgba(140, 155, 155, 0.897);
      }
      
-     .hover-btn{
-       animation-duration: 1000;
-
-     }
-  
-   
+      
+   .blue-filter {
+    filter: hue-rotate(200deg) saturate(3);  
+  }
      
